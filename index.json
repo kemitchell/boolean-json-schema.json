@@ -1,0 +1,48 @@
+{ "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "boolean expression",
+  "type": "object",
+  "$ref": "#/definitions/expression",
+  "definitions": {
+    "expression": {
+      "oneOf": [
+        { "$ref": "#/definitions/variable" },
+        { "$ref": "#/definitions/disjunction" },
+        { "$ref": "#/definitions/conjunction" },
+        { "$ref": "#/definitions/negation" } ] },
+    "conjunction": {
+      "type": "object",
+      "properties": {
+        "and": {
+          "type": "array",
+          "minLength": 2,
+          "maxLength": 2,
+          "items": {
+            "$ref": "#/definitions/expression" } } },
+      "additionalProperties": false,
+      "required": [ "and" ] },
+    "disjunction": {
+      "type": "object",
+      "properties": {
+        "or": {
+          "type": "array",
+          "minLength": 2,
+          "maxLength": 2,
+          "items": {
+            "$ref": "#/definitions/expression" } } },
+      "additionalProperties": false,
+      "required": [ "or" ] },
+    "negation": {
+      "type": "object",
+      "properties": {
+        "not": {
+          "$ref": "#/definitions/expression" } },
+      "additionalProperties": false,
+      "required": [ "not" ] },
+    "variable": {
+      "type": "object",
+      "properties": {
+        "variable": {
+          "type": "string",
+          "minLength": 1 } },
+      "additionalProperties": false,
+      "required": [ "variable" ] } } }

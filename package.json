@@ -1,0 +1,16 @@
+{
+  "name": "boolean-json-schema",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "repository": "kemitchell/boolean-json-schema.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "defence README.md | replace-require-self | node"
+  },
+  "devDependencies": {
+    "defence-cli": "~1.0.1",
+    "replace-require-self": "~1.0.0",
+    "tv4": "~1.1.12"
+  }
+}
