@@ -17,7 +17,8 @@ assert(
 
 assert(
   validate(
-    { not: { variable: 'x' } },
+    { not: {
+	    variable: 'x' } },
   schema))
 
 assert(
