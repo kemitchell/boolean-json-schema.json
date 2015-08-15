@@ -1,6 +1,6 @@
 {
   "name": "boolean-json-schema",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "JSON Schema for boolean expressions",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/boolean-json-schema.js",
