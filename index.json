@@ -39,10 +39,5 @@
       "additionalProperties": false,
       "required": [ "not" ] },
     "variable": {
-      "type": "object",
-      "properties": {
-        "variable": {
-          "type": "string",
-          "minLength": 1 } },
-      "additionalProperties": false,
-      "required": [ "variable" ] } } }
+      "type": "string",
+      "minLength": 1 } } }
