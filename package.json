@@ -8,6 +8,14 @@
     "replace-require-self": "~1.0.0",
     "tv4": "~1.1.12"
   },
+  "keywords": [
+    "algebra",
+    "boolean",
+    "boolean-json",
+    "calculus",
+    "logic",
+    "schema"
+  ],
   "license": "MIT",
   "repository": "kemitchell/boolean-json-schema.js",
   "scripts": {
