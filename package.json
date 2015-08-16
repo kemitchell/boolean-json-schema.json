@@ -1,16 +1,16 @@
 {
   "name": "boolean-json-schema",
-  "version": "2.0.0",
   "description": "JSON Schema for boolean expressions",
+  "version": "2.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
-  "repository": "kemitchell/boolean-json-schema.js",
-  "license": "MIT",
-  "scripts": {
-    "test": "defence README.md | replace-require-self | node"
-  },
   "devDependencies": {
     "defence-cli": "~1.0.1",
     "replace-require-self": "~1.0.0",
     "tv4": "~1.1.12"
+  },
+  "license": "MIT",
+  "repository": "kemitchell/boolean-json-schema.js",
+  "scripts": {
+    "test": "defence README.md | replace-require-self | node"
   }
 }
