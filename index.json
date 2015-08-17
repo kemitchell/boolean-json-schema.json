@@ -14,8 +14,8 @@
       "properties": {
         "and": {
           "type": "array",
-          "minLength": 2,
-          "maxLength": 2,
+          "minItems": 2,
+          "maxItems": 2,
           "items": {
             "$ref": "#/definitions/expression" } } },
       "additionalProperties": false,
@@ -25,8 +25,8 @@
       "properties": {
         "or": {
           "type": "array",
-          "minLength": 2,
-          "maxLength": 2,
+          "minItems": 2,
+          "maxItems": 2,
           "items": {
             "$ref": "#/definitions/expression" } } },
       "additionalProperties": false,

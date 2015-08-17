@@ -27,3 +27,10 @@ assert(validate({ or: [ 'x', 'y' ] }, schema))
 
 assert(validate({ and: [ { or: [ 'x', 'y' ] }, { not: 'z' } ] }, schema))
 ```
+
+Note that conjunctions and disjunctions have exactly two operands:
+
+```javascript
+assert(validate({ and: [ 'x', 'y', 'z' ]}, schema) === false)
+assert(validate({ and: [ 'x', { and: [ 'y', 'z' ] } ] }, schema))
+```
