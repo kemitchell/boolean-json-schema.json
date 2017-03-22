@@ -37,3 +37,7 @@ assert(validate({ and: [ 'x', 'y', 'z' ]}, schema) === true)
 assert(validate({ or: [ 'x' ]}, schema) === false)
 assert(validate({ or: [ 'x', 'y', 'z' ]}, schema) === true)
 ```
+
+### Related
+
+[Joi](https://github.com/hapijs/joi) port: [RobertHerhold/boolean-json-joi-schema](https://github.com/RobertHerhold/boolean-json-joi-schema)
