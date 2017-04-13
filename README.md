@@ -46,4 +46,4 @@ assert(validate({ or: [ 'x', 'y', 'z' ]}, schema) === true)
 * [kemitchell/boolean-json-brute-force.js](https://github.com/kemitchell/boolean-json-brute-force.js): Solve a boolean-json expression by brute force
 * [kemitchell/boolean-json-bifurcate.js](https://github.com/kemitchell/boolean-json-bifurcate.js): Bifurcate a boolean-json expression
 * [RobertHerhold/boolean-json-prune](https://github.com/RobertHerhold/boolean-json-prune): Prune a boolean-json expression
-* [RobertHerhold/boolean-json-joi-schema](https://github.com/RobertHerhold/boolean-json-joi-schema): [Joi](https://github.com/hapijs/joi) port
+* [RobertHerhold/boolean-json-joi-schema](https://github.com/RobertHerhold/boolean-json-joi-schema): [Joi](https://github.com/hapijs/joi) port of the boolean-json schema
