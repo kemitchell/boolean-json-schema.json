@@ -1,14 +1,25 @@
-{ "$schema": "http://json-schema.org/draft-04/schema#",
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "boolean expression",
   "type": "object",
   "$ref": "#/definitions/expression",
   "definitions": {
     "expression": {
       "oneOf": [
-        { "$ref": "#/definitions/variable" },
-        { "$ref": "#/definitions/disjunction" },
-        { "$ref": "#/definitions/conjunction" },
-        { "$ref": "#/definitions/negation" } ] },
+        {
+          "$ref": "#/definitions/variable"
+        },
+        {
+          "$ref": "#/definitions/disjunction"
+        },
+        {
+          "$ref": "#/definitions/conjunction"
+        },
+        {
+          "$ref": "#/definitions/negation"
+        }
+      ]
+    },
     "conjunction": {
       "type": "object",
       "properties": {
@@ -16,9 +27,15 @@
           "type": "array",
           "minItems": 2,
           "items": {
-            "$ref": "#/definitions/expression" } } },
+            "$ref": "#/definitions/expression"
+          }
+        }
+      },
       "additionalProperties": false,
-      "required": [ "and" ] },
+      "required": [
+        "and"
+      ]
+    },
     "disjunction": {
       "type": "object",
       "properties": {
@@ -26,16 +43,30 @@
           "type": "array",
           "minItems": 2,
           "items": {
-            "$ref": "#/definitions/expression" } } },
+            "$ref": "#/definitions/expression"
+          }
+        }
+      },
       "additionalProperties": false,
-      "required": [ "or" ] },
+      "required": [
+        "or"
+      ]
+    },
     "negation": {
       "type": "object",
       "properties": {
         "not": {
-          "$ref": "#/definitions/expression" } },
+          "$ref": "#/definitions/expression"
+        }
+      },
       "additionalProperties": false,
-      "required": [ "not" ] },
+      "required": [
+        "not"
+      ]
+    },
     "variable": {
       "type": "string",
-      "minLength": 1 } } }
+      "minLength": 1
+    }
+  }
+}
