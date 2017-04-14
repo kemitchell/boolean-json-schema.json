@@ -37,3 +37,7 @@ assert(validate({and: ['x', 'y', 'z']}, schema) === true)
 assert(validate({or: ['x']}, schema) === false)
 assert(validate({or: ['x', 'y', 'z']}, schema) === true)
 ```
+
+### Related
+
+There are several other ["boolean-json" libraries](https://www.npmjs.com/browse/keyword/boolean-json) that offer various algorithms for working with the boolean-json structure.
