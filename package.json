@@ -5,7 +5,7 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "devDependencies": {
     "ajv": "^8.6.3",
-    "defence-cli": "~1.0.1",
+    "defence-cli": "^3.0.1",
     "replace-require-self": "~1.0.0"
   },
   "keywords": [
