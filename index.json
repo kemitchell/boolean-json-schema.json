@@ -1,7 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "boolean expression",
-  "type": "object",
   "$ref": "#/definitions/expression",
   "definitions": {
     "expression": {

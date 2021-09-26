@@ -4,9 +4,9 @@
   "version": "3.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "devDependencies": {
+    "ajv": "^8.6.3",
     "defence-cli": "~1.0.1",
-    "replace-require-self": "~1.0.0",
-    "tv4": "~1.1.12"
+    "replace-require-self": "~1.0.0"
   },
   "keywords": [
     "algebra",

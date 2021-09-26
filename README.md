@@ -5,14 +5,16 @@ var schema = require('boolean-json-schema')
 The package exports a [JSON Schema](http://json-schema.org). You will need a compatible library to validate objects:
 
 ```javascript
-var validate = require('tv4').validate
+var ajv = new (require('ajv'))()
+var assert = require('assert')
+
+assert(ajv.validateSchema(schema))
+var validate = ajv.compile(schema)
 ```
 
 The simplest valid expression is just a variable name:
 
 ```javascript
-var assert = require('assert')
-
 assert(validate('first', schema))
 ```
 
