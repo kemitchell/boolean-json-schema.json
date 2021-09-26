@@ -14,33 +14,33 @@ assert(ajv.validateSchema(schema))
 You will need a compatible library, like [Ajv](https://www.npmjs.com/package/ajv), to validate objects:
 
 ```javascript
-var validate = ajv.compile(schema)
+var validBooleanJSON = ajv.compile(schema)
 ```
 
 The simplest valid expression is just a variable name:
 
 ```javascript
-assert(validate('first'))
+assert(validBooleanJSON('first'))
 ```
 
 The syntax is very minimal. The schema permits negation, conjunction, disjunction, and arbitrary combinations:
 
 ```javascript
-assert(validate({not: 'x'}))
+assert(validBooleanJSON({not: 'x'}))
 
-assert(validate({and: ['x', 'y']}))
+assert(validBooleanJSON({and: ['x', 'y']}))
 
-assert(validate({or: ['x', 'y']}))
+assert(validBooleanJSON({or: ['x', 'y']}))
 
-assert(validate({and: [{or: ['x', 'y']}, {not: 'z'}]}))
+assert(validBooleanJSON({and: [{or: ['x', 'y']}, {not: 'z'}]}))
 ```
 
 Conjunctions and disjunctions must have at least two operands:
 
 ```javascript
-assert(validate({and: ['x']}) === false)
-assert(validate({and: ['x', 'y', 'z']}) === true)
+assert(validBooleanJSON({and: ['x']}) === false)
+assert(validBooleanJSON({and: ['x', 'y', 'z']}) === true)
 
-assert(validate({or: ['x']}) === false)
-assert(validate({or: ['x', 'y', 'z']}) === true)
+assert(validBooleanJSON({or: ['x']}) === false)
+assert(validBooleanJSON({or: ['x', 'y', 'z']}) === true)
 ```
